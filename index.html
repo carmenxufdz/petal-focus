@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Petal Focus</title>
+        <link rel="stylesheet" href="styles.css" />
+        
+    </head>
+
+    <body>
+        <div class="app">
+            <div class="upBar" style="display: flex;">
+                <p id="appTitle">Petal Focus</p>
+                <div class="barButtons">
+                <button id="minimizeButton"></button>
+                <button id="closeButton"></button>
+                </div>
+            </div>
+
+            <div class="inside">
+                <div id="StartPage">
+                    <p class="startText">Petal by petal, stay focused</p>
+                    <button id="startButton" class="un-boton"></button>
+                </div>
+
+                <div id="sakura"  style="display:none;">
+                    <img src="assets/sakura/05.png"/>
+                    <p id="countdown"></p>
+                </div>
+
+                <div id="TimerPage" style="display:none;">
+                    <button id="pauseButton" class="dos-botones"></button>
+                    <button id="finishTimer" class="finishButton dos-botones" ></button>
+                </div>
+
+                <div id="BreakPage" style="display:none;">
+                    <p id="breakPhrase">Breathe</p>
+                    <button id="againButton" class=" dos-botones" style="display:none;"></button>
+                    <button id="finishBreak" class="finishButton dos-botones" style="display:none;"></button>
+                </div>
+
+                <div id="FinishPage" style="display:none;">
+                    <p id="finishPhrase"></p>
+                    <p id="bloomingTime">Blooming Time:</p>
+                    <p id="totalTime"></p>
+                    <button id="homeButton" class="un-boton"></button>
+                </div>
+            </div>
+
+            <script src="script.js" defer></script>
+        </div>
+    </body>
+</html>

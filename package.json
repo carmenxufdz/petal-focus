@@ -1,0 +1,30 @@
+{
+  "name": "petal-focus",
+  "version": "1.0.0",
+  "description": "A simple Pomodoro App Sakura Themed",
+  "author": "Alissea <alissea.gaamestudio@gmail.com>",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  
+  "build": {
+    "appId": "alisseain8bits",
+    "win": {
+      "target": "nsis"
+    }
+  },
+
+  "devDependencies": {
+    "electron": "^26.0.0",
+    "electron-builder": "^26.4.0"
+  },
+
+  "win": {
+    "icon": "icono.ico",
+    "target": "nsis"
+  }
+
+
+}

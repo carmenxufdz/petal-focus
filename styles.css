@@ -1,0 +1,210 @@
+@font-face {
+    font-family: "Aseprite";      /* Nombre que usarás en CSS */
+    src: url("fonts/aseprite/aseprite.otf") format("truetype"); /* Ruta relativa a tu CSS */
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Aseprite", sans-serif;
+    width: 100vw;
+    height: 100vh;
+    border-radius: 20px;
+    margin: 0;
+    animation: cambiarFondo 0.6s infinite;
+
+}
+
+
+@keyframes cambiarFondo {
+    0% {
+        background-image: url('assets/wallpaper/01.png');
+    }
+    33% {
+        background-image: url('assets/wallpaper/02.png');
+    }
+    66% {
+        background-image: url('assets/wallpaper/03.png');
+    }
+    100% {
+        background-image: url('assets/wallpaper/01.png');
+    }
+}
+
+
+/* BARRA SUPERIOR */
+.upBar{
+    height: 50px;
+}
+
+#appTitle{
+    margin: 0;
+    padding: 0;
+    color: #c43670;
+    font-size: 16px;
+    margin-left: 12px;
+    margin-top: 20px;
+}
+
+.barButtons{
+    display: flex;
+    gap: 8px;
+    margin-top: 14px;
+    margin-right: 9px;
+    margin-left: auto;
+}
+
+#closeButton{
+    width: 22px;
+    height: 22px;
+    background-image: url('assets/buttons/close.png');
+    border: none;
+}
+
+#minimizeButton{
+    width: 22px;
+    height: 22px;
+    background-image: url('assets/buttons/minimize.png');
+    border: none;
+}
+
+
+.inside{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    width: 300px;
+    height: 420px;
+    
+    margin-left: 11px;
+
+    overflow-y: hidden;
+    overflow-x: hidden;
+
+    white-space: normal;    /* permite que el texto haga salto de línea */
+    word-wrap: break-word;  /* rompe palabras largas si es necesario */
+    overflow-wrap: break-word; /* lo mismo, estándar moderno */
+}
+
+/* START PAGE */
+#StartPage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.startText{
+    margin: 0;
+    padding: 0;
+    color: #f283af;
+    font-size: 32px;
+    text-align: center;
+    text-shadow:
+        -2px -2px 0 #fbdae5,
+        0px -2px 0 #fbdae5,
+        2px -2px 0 #fbdae5,
+        -2px  0px 0 #fbdae5,
+        2px  0px 0 #fbdae5,
+        -2px  2px 0 #fbdae5,
+        0px  2px 0 #fbdae5,
+        2px  2px 0 #fbdae5;
+}
+#startButton{
+    margin: 0;
+    padding: 0;
+    width: 120px;
+    height: 40px;
+    align-items: center;
+    background-image: url('assets/buttons/StartButton.png');
+    border: none;
+}
+
+/* COUNTDOWN */
+
+#sakura{
+    position: relative;
+    width: 200px;
+    height: 202px;
+}
+
+#sakura img{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+}
+
+#sakura #countdown{
+    position: absolute;
+    top: 94px;             
+    left: 37px;
+    color: black;
+    font-size: 50px;
+    text-align: center;
+    z-index: 10;
+}
+/* TIMER PAGE */
+
+#TimerPage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+    gap: 23px;
+}
+
+#pauseButton{
+    width: 90px;
+    height: 35px;
+    background-image: url('assets/buttons/PauseButton.png');
+    border: none;
+}
+
+.finishButton{
+    width: 90px;
+    height: 35px;
+    background-image: url('assets/buttons/FinishButton.png');
+    border: none;
+}
+
+/* BREAK */
+
+#BreakPage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 23px;
+}
+
+#breakPhrase{
+    margin: 0;
+    padding: 0;
+    color: #f283af;
+    font-size: 28px;
+    text-align: center;
+}
+
+#againButton{
+    width: 120px;
+    height: 40px;
+    background-image: url('assets/buttons/AgainButton.png');
+    border: none;
+}
+
+/* FINISH */
+
+#homeButton{
+    width: 120px;
+    height: 40px;
+    background-image: url('assets/buttons/HomeButton.png');
+    border: none;
+}

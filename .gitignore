@@ -1,0 +1,25 @@
+# Directorios de compilación/distribución
+dist/
+build/
+
+# Dependencias de Node.js
+node_modules/
+
+# Archivos de configuración
+.env
+.env.*
+.vscode/
+
+# Archivos de registro y temporales
+*.log
+*.tmp
+*.lock
+
+# Archivos de Electron específicos
+*.exe
+*.app
+out/
+release/
+
+# Archivos de Aseprite
+*.aseprite
