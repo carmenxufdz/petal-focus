@@ -24,7 +24,7 @@ Figma design file for this project: https://www.figma.com/design/P26cUwlGGPQZfmG
 ### 1. Clone This Repo
 
 ```
-git clone https://github.com/nasha-wanich/little-calendar.git
+git clone https://github.com/carmenxufdz/petal-focus.git
 cd petal-focus
 ```
 
