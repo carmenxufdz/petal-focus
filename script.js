@@ -1,7 +1,7 @@
 const { ipcRenderer } = require('electron');
 
-const focusTime = 0.1*60;
-const breakTime = 0.1*60;
+const focusTime = 25*60;
+const breakTime = 5*60;
 const largeBreak = 15*60;
 
 const alarmSound = new Audio('assets/sound/timer.wav');
