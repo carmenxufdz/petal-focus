@@ -20,30 +20,34 @@
             <div class="inside">
                 <div id="StartPage">
                     <p class="startText">Petal by petal, stay focused</p>
-                    <button id="startButton" class="un-boton"></button>
+                    <button id="startButton"></button>
                 </div>
 
                 <div id="sakura"  style="display:none;">
-                    <img src="assets/sakura/05.png"/>
+                    <img id="sakuraImg">
                     <p id="countdown"></p>
                 </div>
 
                 <div id="TimerPage" style="display:none;">
-                    <button id="pauseButton" class="dos-botones"></button>
-                    <button id="finishTimer" class="finishButton dos-botones" ></button>
+                    <button id="pauseButton"></button>
+                    <button id="finishTimer" class="finishButton" ></button>
                 </div>
 
                 <div id="BreakPage" style="display:none;">
-                    <p id="breakPhrase">Breathe</p>
-                    <button id="againButton" class=" dos-botones" style="display:none;"></button>
-                    <button id="finishBreak" class="finishButton dos-botones" style="display:none;"></button>
+                    <p id="breakPhrase"></p>
+                    <div id="breakButtons"  style="display:none;">
+                        <button id="againButton"></button>
+                        <button id="finishBreak" class="finishButton"></button>
+                    </div>
                 </div>
 
                 <div id="FinishPage" style="display:none;">
-                    <p id="finishPhrase"></p>
-                    <p id="bloomingTime">Blooming Time:</p>
-                    <p id="totalTime"></p>
-                    <button id="homeButton" class="un-boton"></button>
+                    <p id="finishPhrase">Your effort is blooming beautifully</p>
+                    <div id="TimeCount">
+                        <p id="bloomingTime">Blooming Time:</p>
+                        <p id="totalTime"></p>
+                    </div>
+                    <button id="homeButton"></button>
                 </div>
             </div>
 

@@ -40,6 +40,7 @@ body {
 /* BARRA SUPERIOR */
 .upBar{
     height: 50px;
+    -webkit-app-region: drag;
 }
 
 #appTitle{
@@ -57,6 +58,7 @@ body {
     margin-top: 14px;
     margin-right: 9px;
     margin-left: auto;
+    -webkit-app-region: no-drag;
 }
 
 #closeButton{
@@ -140,17 +142,22 @@ body {
     height: 100%;
     background-repeat: no-repeat;
     background-position: 0 0;
+    background: transparent;
     background-size: cover;
 }
 
 #sakura #countdown{
     position: absolute;
-    top: 94px;             
-    left: 37px;
-    color: black;
-    font-size: 50px;
+
+    top: 55px;    /* ↓ baja o sube */
+    left: 40px;   /* → mueve a la derecha o izquierda */
+
+    font-size: 40px;
+    background: transparent;
+    color: #fbf4eb;
     text-align: center;
     z-index: 10;
+    text-align: center; /* centra el texto dentro del ancho */
 }
 /* TIMER PAGE */
 
@@ -165,7 +172,6 @@ body {
 #pauseButton{
     width: 90px;
     height: 35px;
-    background-image: url('assets/buttons/PauseButton.png');
     border: none;
 }
 
@@ -182,25 +188,106 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 23px;
 }
 
 #breakPhrase{
-    margin: 0;
+    margin-top: 23px;
     padding: 0;
     color: #f283af;
     font-size: 28px;
     text-align: center;
+    text-shadow:
+        -2px -2px 0 #fbdae5,
+        0px -2px 0 #fbdae5,
+        2px -2px 0 #fbdae5,
+        -2px  0px 0 #fbdae5,
+        2px  0px 0 #fbdae5,
+        -2px  2px 0 #fbdae5,
+        0px  2px 0 #fbdae5,
+        2px  2px 0 #fbdae5;
+}
+
+#breakButtons{
+    display: flex;
+    margin-top: 32px;
+    gap: 23px;
 }
 
 #againButton{
-    width: 120px;
-    height: 40px;
+    width: 90px;
+    height: 35px;
     background-image: url('assets/buttons/AgainButton.png');
     border: none;
 }
 
 /* FINISH */
+
+#FinishPage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+#finishPhrase{
+    margin: 0;
+    padding: 0;
+    color: #f283af;
+    font-size: 32px;
+    text-align: center;
+    text-shadow:
+        -2px -2px 0 #fbdae5,
+        0px -2px 0 #fbdae5,
+        2px -2px 0 #fbdae5,
+        -2px  0px 0 #fbdae5,
+        2px  0px 0 #fbdae5,
+        -2px  2px 0 #fbdae5,
+        0px  2px 0 #fbdae5,
+        2px  2px 0 #fbdae5;
+}
+
+#TimeCount{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#bloomingTime{
+    margin: 0;
+    padding: 0;
+    color: #fcf5eb;
+    font-size: 14px;
+    text-align: center;
+    text-shadow:
+        -2px -2px 0 #fbdae5,
+        0px -2px 0 #fbdae5,
+        2px -2px 0 #fbdae5,
+        -2px  0px 0 #fbdae5,
+        2px  0px 0 #fbdae5,
+        -2px  2px 0 #fbdae5,
+        0px  2px 0 #fbdae5,
+        2px  2px 0 #fbdae5;
+}
+
+#totalTime{
+    margin: 0;
+    padding: 0;
+    color: #fcf5eb;
+    font-size: 14px;
+    text-align: center;
+    text-shadow:
+        -2px -2px 0 #fbdae5,
+        0px -2px 0 #fbdae5,
+        2px -2px 0 #fbdae5,
+        -2px  0px 0 #fbdae5,
+        2px  0px 0 #fbdae5,
+        -2px  2px 0 #fbdae5,
+        0px  2px 0 #fbdae5,
+        2px  2px 0 #fbdae5;
+}
 
 #homeButton{
     width: 120px;
