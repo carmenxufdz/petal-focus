@@ -1,6 +1,7 @@
 # Petal Focus
 
-A simple desktop sakura-themed pomodoro app built with HTML, CSS, JavaScript, and ElectronJS.
+Petal Focus is a Sakura-themed Pomodoro desktop app designed in Figma and built with HTML, CSS, JavaScript, and Electron.
+It helps you stay focused using the Pomodoro technique in a calm, minimal interface inspired by cherry blossoms.
 
 ## Design File
 
